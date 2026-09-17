@@ -1,5 +1,6 @@
 from src.data_loader import load_data
 from src.processing import filter_and_transform_data
+from src.summary import create_summary_tables
 
 
 def main():
@@ -33,6 +34,22 @@ def main():
                 ]
             ].head()
         )
+
+        summaries = create_summary_tables(filtered_df)
+
+        print("\nSummary tables created successfully.")
+
+        print("\nGrouped table:")
+        print(summaries["grouped"].head())
+
+        print("\nGrouped two-column table:")
+        print(summaries["grouped_two"].head())
+
+        print("\nPivot table:")
+        print(summaries["pivot"].head())
+
+        print("\nTop 10:")
+        print(summaries["top10"])
 
     except FileNotFoundError as error:
         print(f"ERROR: {error}")
