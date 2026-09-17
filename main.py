@@ -6,7 +6,7 @@ def main():
     """Load, filter, and transform the Customs 2015 dataset."""
 
     try:
-        # Load the original dataset.
+    
         df = load_data()
 
         print("\nFirst 5 rows of original dataset:")
@@ -15,7 +15,7 @@ def main():
         print("\nOriginal dataset shape:")
         print(df.shape)
 
-        # Filter and transform the dataset.
+        
         filtered_df = filter_and_transform_data(df)
 
         print("\nFiltered dataset shape:")
