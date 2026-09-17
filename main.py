@@ -1,23 +1,38 @@
 from src.data_loader import load_data
+from src.processing import filter_and_transform_data
+
 
 def main():
-    """Run the initial Customs 2015 dataset loading test."""
+    """Load, filter, and transform the Customs 2015 dataset."""
 
     try:
+        # Load the original dataset.
         df = load_data()
 
-        print("\nFirst 5 rows:")
+        print("\nFirst 5 rows of original dataset:")
         print(df.head())
 
-        print("\nDataset shape:")
+        print("\nOriginal dataset shape:")
         print(df.shape)
 
-        print("\nRequired columns:")
-        print([
-            "countryorigin_iso3",
-            "tq",
-            "dutiablevaluephp"
-        ])
+        # Filter and transform the dataset.
+        filtered_df = filter_and_transform_data(df)
+
+        print("\nFiltered dataset shape:")
+        print(filtered_df.shape)
+
+        print("\nFirst 5 filtered records:")
+        print(
+            filtered_df[
+                [
+                    "countryorigin_iso3",
+                    "tq",
+                    "dutiablevaluephp",
+                    "dutiablevalue_million",
+                    "value_category"
+                ]
+            ].head()
+        )
 
     except FileNotFoundError as error:
         print(f"ERROR: {error}")
@@ -25,6 +40,6 @@ def main():
     except ValueError as error:
         print(f"ERROR: {error}")
 
+
 if __name__ == "__main__":
     main()
-
