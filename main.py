@@ -1,7 +1,11 @@
 from src.data_loader import load_data
 from src.processing import filter_and_transform_data
 from src.summary import create_summary_tables
-
+from src.plotting import (
+    compare_loop_vectorized,
+    create_bar_plot,
+    create_heatmap
+)
 
 def main():
     """Load, filter, and transform the Customs 2015 dataset."""
@@ -50,6 +54,31 @@ def main():
 
         print("\nTop 10:")
         print(summaries["top10"])
+
+        comparison = compare_loop_vectorized(filtered_df)
+
+        print("\nLoop vs Vectorized:")
+        print(
+            "Results equal:",
+            comparison["results_equal"]
+        )
+        print(
+            "Loop median time:",
+            comparison["loop_median_time"]
+        )
+        print(
+            "Vectorized median time:",
+            comparison["vectorized_median_time"]
+        )
+        print(
+            "High-value records in sample:",
+            comparison["high_value_count"]
+        )
+
+        create_bar_plot(filtered_df)
+        create_heatmap(filtered_df)
+
+        print("\nPlots created successfully.")
 
     except FileNotFoundError as error:
         print(f"ERROR: {error}")
