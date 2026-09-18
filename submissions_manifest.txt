@@ -1,0 +1,8 @@
+Repository URL:
+https://github.com/ralpharonbonifacio-glitch/Philippine-Data-Summary-Program---GRP-6
+
+Release Tag:
+week6-v1.0
+
+Full Commit Hash:
+f1d8b2144f9d06d5b451658c347d5cae1adb30ff
