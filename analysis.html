@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>486bdd3fbed946328e2ed7020a552059</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="philippine-data-summary-program" class="cell markdown">
+<h1>Philippine Data Summary Program</h1>
+<p>This notebook demonstrates the project's reusable Python modules for
+loading, filtering, transforming, and summarizing the Philippine Customs
+2015 dataset.</p>
+<p><strong>Filtering rules:</strong></p>
+<ul>
+<li>Quarter (<code>tq</code>) = <code>2015q4</code></li>
+<li>Dutiable value (<code>dutiablevaluephp</code>) &gt;= PHP
+1,000,000</li>
+</ul>
+<p>The raw <code>2015.csv</code> file should be placed in the project
+root folder.</p>
+</section>
+<div class="cell code" data-execution_count="1">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import functions from the project modules</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src.data_loader <span class="im">import</span> load_data</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src.processing <span class="im">import</span> filter_and_transform_data</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> src.summary <span class="im">import</span> create_summary_tables</span></code></pre></div>
+</div>
+<section id="load-the-dataset" class="cell markdown">
+<h2>Load the Dataset</h2>
+</section>
+<div class="cell code">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> load_data()</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Dataset shape: </span><span class="sc">{</span>df<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Loading dataset: 2015.csv
+</code></pre>
+</div>
+<div class="output stream stderr">
+<pre><code>c:\Users\JosefN\Desktop\Coding\2nd Year\DSA4153\Case Study 2\Philippine-Data-Summary-Program---GRP-6\src\data_loader.py:29: DtypeWarning: Columns (4: entry, 25: prefcode, 28: subport, 29: port) have mixed types. Specify dtype option on import or set low_memory=False.
+  df = pd.read_csv(
+</code></pre>
+</div>
+<div class="output stream stdout">
+<pre><code>Dataset loaded successfully: 2,236,612 rows
+Dataset shape: (2236612, 30)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="2">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>uid</th>
+      <th>ty</th>
+      <th>tq</th>
+      <th>tm</th>
+      <th>entry</th>
+      <th>hscode</th>
+      <th>goodsdescription</th>
+      <th>p</th>
+      <th>q</th>
+      <th>m_fob</th>
+      <th>...</th>
+      <th>vatbase</th>
+      <th>vatpaid</th>
+      <th>othertax</th>
+      <th>finesandpenalties</th>
+      <th>dutiestaxes</th>
+      <th>prefcode</th>
+      <th>countryorigin_iso3</th>
+      <th>countryexport_iso3</th>
+      <th>subport</th>
+      <th>port</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>201501 00000001</td>
+      <td>2015</td>
+      <td>2015q1</td>
+      <td>2015m1</td>
+      <td>C</td>
+      <td>15119090000</td>
+      <td>RBD PALM OLEIN IN BULK</td>
+      <td>0.643583</td>
+      <td>2999325.0</td>
+      <td>1930315.60</td>
+      <td>...</td>
+      <td>90638835</td>
+      <td>10876660</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>10876660</td>
+      <td>AFTA</td>
+      <td>MYS</td>
+      <td>MYS</td>
+      <td>Sub-Port of Dumaguete</td>
+      <td>Port of Cebu</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>201501 00000002</td>
+      <td>2015</td>
+      <td>2015q1</td>
+      <td>2015m1</td>
+      <td>C</td>
+      <td>72104990000</td>
+      <td>PRIME HOT DIPPED GALVANIZED STEEL SHEET IN C</td>
+      <td>0.632000</td>
+      <td>532480.0</td>
+      <td>336527.38</td>
+      <td>...</td>
+      <td>15884083</td>
+      <td>1906090</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1906090</td>
+      <td>ACFTA</td>
+      <td>CHN</td>
+      <td>CHN</td>
+      <td>Harbour Centre Port Terminal Inc</td>
+      <td>Port of Manila</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>201501 00000003</td>
+      <td>2015</td>
+      <td>2015q1</td>
+      <td>2015m1</td>
+      <td>C</td>
+      <td>72104990000</td>
+      <td>PRIME HOT DIPPED GALVANIZED STEEL SHEET IN C</td>
+      <td>0.627000</td>
+      <td>1779450.0</td>
+      <td>1115715.50</td>
+      <td>...</td>
+      <td>53064898</td>
+      <td>6367787</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>6367787</td>
+      <td>ACFTA</td>
+      <td>CHN</td>
+      <td>CHN</td>
+      <td>Harbour Centre Port Terminal Inc</td>
+      <td>Port of Manila</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>201501 00000004</td>
+      <td>2015</td>
+      <td>2015q1</td>
+      <td>2015m1</td>
+      <td>C</td>
+      <td>72139100000</td>
+      <td>HOT ROLLED WIRE ROD SWRY11 6.5MM</td>
+      <td>0.474000</td>
+      <td>1525249.0</td>
+      <td>722968.00</td>
+      <td>...</td>
+      <td>34664620</td>
+      <td>4159754</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>4501570</td>
+      <td>NaN</td>
+      <td>CHN</td>
+      <td>CHN</td>
+      <td>Harbour Centre Port Terminal Inc</td>
+      <td>Port of Manila</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>201501 00000005</td>
+      <td>2015</td>
+      <td>2015q1</td>
+      <td>2015m1</td>
+      <td>C</td>
+      <td>72163300000</td>
+      <td>STEEL STRUCTURE</td>
+      <td>1.202257</td>
+      <td>134305.2</td>
+      <td>161469.44</td>
+      <td>...</td>
+      <td>7555345</td>
+      <td>906641</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>906641</td>
+      <td>AKFTA</td>
+      <td>KOR</td>
+      <td>KOR</td>
+      <td>Harbour Centre Port Terminal Inc</td>
+      <td>Port of Manila</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 30 columns</p>
+</div>
+</div>
+</div>
+<section id="filter-and-transform-the-data" class="cell markdown">
+<h2>Filter and Transform the Data</h2>
+</section>
+<div class="cell code" data-execution_count="3">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>filtered_df <span class="op">=</span> filter_and_transform_data(df)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Filtered dataset shape: </span><span class="sc">{</span>filtered_df<span class="sc">.</span>shape<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>filtered_df[</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    [</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;countryorigin_iso3&quot;</span>,</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;tq&quot;</span>,</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;dutiablevaluephp&quot;</span>,</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;dutiablevalue_million&quot;</span>,</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>        <span class="st">&quot;value_category&quot;</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    ]</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>].head()</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Filtered dataset shape: (127272, 32)
+</code></pre>
+</div>
+<div class="output execute_result" data-execution_count="3">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>countryorigin_iso3</th>
+      <th>tq</th>
+      <th>dutiablevaluephp</th>
+      <th>dutiablevalue_million</th>
+      <th>value_category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1724767</th>
+      <td>SAU</td>
+      <td>2015q4</td>
+      <td>5153749391</td>
+      <td>5153.749391</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>2192920</th>
+      <td>KWT</td>
+      <td>2015q4</td>
+      <td>4535653502</td>
+      <td>4535.653502</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>2192918</th>
+      <td>KWT</td>
+      <td>2015q4</td>
+      <td>4434554358</td>
+      <td>4434.554358</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>2192922</th>
+      <td>KWT</td>
+      <td>2015q4</td>
+      <td>4292390824</td>
+      <td>4292.390824</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>2174779</th>
+      <td>RUS</td>
+      <td>2015q4</td>
+      <td>3595895925</td>
+      <td>3595.895925</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="create-summary-tables" class="cell markdown">
+<h2>Create Summary Tables</h2>
+</section>
+<div class="cell code" data-execution_count="4">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Generate the project&#39;s summary tables</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>summaries <span class="op">=</span> create_summary_tables(filtered_df)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Summary tables created successfully.&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Summary tables created successfully.
+</code></pre>
+</div>
+</div>
+<section id="grouped-summary" class="cell markdown">
+<h3>Grouped Summary</h3>
+</section>
+<div class="cell code" data-execution_count="5">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>summaries[<span class="st">&quot;grouped&quot;</span>].head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="5">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>countryorigin_iso3</th>
+      <th>record_count</th>
+      <th>total_dutiablevaluephp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AIA</td>
+      <td>1</td>
+      <td>3775622</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ALB</td>
+      <td>1</td>
+      <td>1086985</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AND</td>
+      <td>1</td>
+      <td>9257361</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ANT</td>
+      <td>13</td>
+      <td>102405629</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ARE</td>
+      <td>286</td>
+      <td>4148287230</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ARG</td>
+      <td>173</td>
+      <td>6475751071</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>ASM</td>
+      <td>1</td>
+      <td>1617296</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ATG</td>
+      <td>1</td>
+      <td>1309184</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>AUS</td>
+      <td>1387</td>
+      <td>8330212216</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>AUT</td>
+      <td>245</td>
+      <td>1317713468</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="grouped-summary-by-country-and-quarter"
+class="cell markdown">
+<h3>Grouped Summary by Country and Quarter</h3>
+</section>
+<div class="cell code" data-execution_count="6">
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>summaries[<span class="st">&quot;grouped_two&quot;</span>].head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="6">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>countryorigin_iso3</th>
+      <th>tq</th>
+      <th>record_count</th>
+      <th>total_dutiablevaluephp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AIA</td>
+      <td>2015q4</td>
+      <td>1</td>
+      <td>3775622</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ALB</td>
+      <td>2015q4</td>
+      <td>1</td>
+      <td>1086985</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AND</td>
+      <td>2015q4</td>
+      <td>1</td>
+      <td>9257361</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ANT</td>
+      <td>2015q4</td>
+      <td>13</td>
+      <td>102405629</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ARE</td>
+      <td>2015q4</td>
+      <td>286</td>
+      <td>4148287230</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ARG</td>
+      <td>2015q4</td>
+      <td>173</td>
+      <td>6475751071</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>ASM</td>
+      <td>2015q4</td>
+      <td>1</td>
+      <td>1617296</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ATG</td>
+      <td>2015q4</td>
+      <td>1</td>
+      <td>1309184</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>AUS</td>
+      <td>2015q4</td>
+      <td>1387</td>
+      <td>8330212216</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>AUT</td>
+      <td>2015q4</td>
+      <td>245</td>
+      <td>1317713468</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="pivot-table" class="cell markdown">
+<h3>Pivot Table</h3>
+</section>
+<div class="cell code" data-execution_count="7">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>summaries[<span class="st">&quot;pivot&quot;</span>].head(<span class="dv">10</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="7">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>tq</th>
+      <th>countryorigin_iso3</th>
+      <th>2015q4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>AIA</td>
+      <td>3775622</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ALB</td>
+      <td>1086985</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>AND</td>
+      <td>9257361</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ANT</td>
+      <td>102405629</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ARE</td>
+      <td>4148287230</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>ARG</td>
+      <td>6475751071</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>ASM</td>
+      <td>1617296</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>ATG</td>
+      <td>1309184</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>AUS</td>
+      <td>8330212216</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>AUT</td>
+      <td>1317713468</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="top-10-results" class="cell markdown">
+<h3>Top 10 Results</h3>
+</section>
+<div class="cell code" data-execution_count="8">
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>summaries[<span class="st">&quot;top10&quot;</span>]</span></code></pre></div>
+<div class="output execute_result" data-execution_count="8">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>countryorigin_iso3</th>
+      <th>tq</th>
+      <th>dutiablevaluephp</th>
+      <th>dutiablevalue_million</th>
+      <th>value_category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1724767</th>
+      <td>SAU</td>
+      <td>2015q4</td>
+      <td>5153749391</td>
+      <td>5153.749391</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>2192920</th>
+      <td>KWT</td>
+      <td>2015q4</td>
+      <td>4535653502</td>
+      <td>4535.653502</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>2192918</th>
+      <td>KWT</td>
+      <td>2015q4</td>
+      <td>4434554358</td>
+      <td>4434.554358</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>2192922</th>
+      <td>KWT</td>
+      <td>2015q4</td>
+      <td>4292390824</td>
+      <td>4292.390824</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>2174779</th>
+      <td>RUS</td>
+      <td>2015q4</td>
+      <td>3595895925</td>
+      <td>3595.895925</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>1702972</th>
+      <td>RUS</td>
+      <td>2015q4</td>
+      <td>3400621706</td>
+      <td>3400.621706</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>1724754</th>
+      <td>KWT</td>
+      <td>2015q4</td>
+      <td>3333129856</td>
+      <td>3333.129856</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>1724769</th>
+      <td>KWT</td>
+      <td>2015q4</td>
+      <td>3193786592</td>
+      <td>3193.786592</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>1630702</th>
+      <td>FRA</td>
+      <td>2015q4</td>
+      <td>2874168874</td>
+      <td>2874.168874</td>
+      <td>High</td>
+    </tr>
+    <tr>
+      <th>1724760</th>
+      <td>SAU</td>
+      <td>2015q4</td>
+      <td>2785408765</td>
+      <td>2785.408765</td>
+      <td>High</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<section id="analysis-results" class="cell markdown">
+<h2>Analysis Results</h2>
+<p>The filtered dataset contains <strong>127,272 records</strong> based
+on the project's filtering rules.</p>
+<p>The notebook uses the same imported project functions as
+<code>main.py</code>, so the analysis is based on the program's reusable
+modules rather than duplicating their implementation here.</p>
+</section>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v31edd6df95cf4e85bb4c19e7a9bdbcba1788362987495" integrity="sha512-iIg7k2xntmwu6/uSb5tpc/hySgZc4eoL31yB29W6tJFo2akwjPWcEqnCEdJvGexCL0KEQwVYv5BlowfhVz26hg==" data-cf-beacon='{"version":"2024.11.0","token":"0357a45f23a943f08700f7f9af191ee6","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+</html>

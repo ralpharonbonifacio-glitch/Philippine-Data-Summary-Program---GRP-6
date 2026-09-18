@@ -1,0 +1,7 @@
+check,expected,actual,tolerance,pass
+Raw row count,2236612,2236612,0.0,True
+Raw dutiable value total,3587267375257,3587267375257,1.0,True
+Filtered row count,127272,127272,0.0,True
+Grouped record count,127272,127272,0.0,True
+Grouped dutiable value total,952511462268,952511462268,1.0,True
+Pivot dutiable value total,952511462268,952511462268,1.0,True
