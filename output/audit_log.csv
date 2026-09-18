@@ -1,0 +1,6 @@
+step,operation,rule,rows_before,rows_after
+1,Load dataset,Read Customs 2015 CSV file,0,2236612
+2,Filter records,"tq == 2015q4 AND dutiablevaluephp >= 1,000,000",2236612,127272
+3,Create derived columns,Create dutiablevalue_million and value_category,127272,127272
+4,Create summary tables,Group and aggregate filtered records,127272,127272
+5,Create plots,Generate bar plot and heatmap from filtered records,127272,127272
