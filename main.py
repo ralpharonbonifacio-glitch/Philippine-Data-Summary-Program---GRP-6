@@ -6,6 +6,8 @@ from src.plotting import (
     create_bar_plot,
     create_heatmap
 )
+from src.validation import DataValidator, save_validation
+from src.audit import create_audit_log
 
 def main():
     """Load, filter, and transform the Customs 2015 dataset."""
@@ -79,6 +81,21 @@ def main():
         create_heatmap(filtered_df)
 
         print("\nPlots created successfully.")
+
+        validator = DataValidator(df, filtered_df, summaries)
+
+        validation_results = validator.run_all_checks()
+
+        save_validation(validation_results)
+
+        print("\nValidation results:")
+        print(validation_results)
+
+        # Create audit log.
+        audit_results = create_audit_log(df, filtered_df)
+
+        print("\nAudit log created successfully.")
+        print(audit_results)
 
     except FileNotFoundError as error:
         print(f"ERROR: {error}")
